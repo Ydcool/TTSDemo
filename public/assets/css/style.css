@@ -1,0 +1,44 @@
+.container {
+    padding-top: 16px;
+}
+
+.tts_input {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    min-height: 40px;
+}
+
+.span {
+    margin: 4px;
+}
+
+.downloadlink {
+    margin-left: 16px;
+    display: none
+}
+
+.audio_preview {
+    margin-left: 8px;
+    display: none
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    font-size: 12px;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto
+}

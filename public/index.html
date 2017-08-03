@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线语音合成</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div id="alerts_container" class="alerts_container"></div>
+    <div class="container theme-showcase" role="main">
+        <div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h5>在线合成</h5>
+                </div>
+                <div class="panel-body">
+                    <span class="span">请在下方输入要转换的文本，支持标点分割。最长不超过200字。</span></br>
+                    <textarea id="textarea_tts" class="tts_input" rows="2" cols="20"></textarea>
+                    </br>
+                    <div>
+                        <button id="commit_tts" class="btn btn-sm btn-primary">转换</button>
+                        <audio id="play_tts" class="audio_preview" controls autoplay>预览</audio>
+                        <a id="download_link" class="downloadlink" href="#" target="blank">下载</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/socket.io.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+<footer>
+    <div class="center">
+        <p class="mini_footer">Coded with ❤️ by <a href="mailto:hi@ydcool.me">Dominic</a> | Powered By BaiduSpeech</p>
+    </div>
+</footer>
+
+</html>

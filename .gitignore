@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+.idea
+*.log
+*.mp3
+configs.json
+package-lock.json
+node_modules
