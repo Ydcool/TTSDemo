@@ -12,6 +12,12 @@ if (!fs.existsSync(configFile)) {
     console.log('ERROR: no config file found!');
     return;
 }
+if (!fs.existsSync(path.join(__dirname, 'public/tmp'))) {
+    fs.mkdirSync(path.join(__dirname, 'public/tmp'));
+}
+if (!fs.existsSync(path.join(__dirname, 'public/tmp/logs'))) {
+    fs.mkdirSync(path.join(__dirname, 'public/tmp/logs'));
+}
 var cfg = JSON.parse(fs.readFileSync(configFile, 'utf8'));
 
 var AipSpeech = require('./bd_api/index').speech;
